@@ -1,1 +1,3 @@
-# PAD_lab2_DistributedSystem_example
+# PAD_lab2_DistributedSystem
+example
+
