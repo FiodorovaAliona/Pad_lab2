@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="tcpResponse" type="tcpResponse"/>
+  <xs:element name="employee" type="employee"/>
+
+  <xs:complexType name="tcpResponse">
+    <xs:sequence>
+      <xs:element name="employees" type="employee" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="employee">
+    <xs:sequence>
+      <xs:element name="lastName" type="xs:string" minOccurs="0"/>
+      <xs:element name="firstName" type="xs:string" minOccurs="0"/>
+      <xs:element name="department" type="xs:string" minOccurs="0"/>
+      <xs:element name="salary" type="xs:double"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
